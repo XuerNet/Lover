@@ -27,7 +27,6 @@ def run():
             print(f"成功发送=> {ip}")
         except :
             print(f"发送失败 => {ip}")
-            s.close()
 
 for y in range(threads):
     th = threading.Thread(target = run)
